@@ -1,0 +1,14 @@
+@use "app/styles/variables" as *;
+@use "app/styles/theme" as *;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+  }
+}

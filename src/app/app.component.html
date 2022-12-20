@@ -1,0 +1,10 @@
+<button
+  mat-icon-button
+  class="bg-primary-main/30 hover:bg-primary-main/50"
+  (click)="toggleTheme()">
+  <mat-icon *ngIf="isDarkTheme$ | async; else darkMode">light_mode</mat-icon>
+  <ng-template #darkMode>
+    <mat-icon>dark_mode</mat-icon>
+  </ng-template>
+</button>
+<router-outlet></router-outlet>
