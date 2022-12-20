@@ -1,0 +1,137 @@
+<div class="w-screen min-h-screen">
+  <img
+    class="absolute inset-0 h-full w-full object-cover z-0"
+    src="https://images.unsplash.com/photo-1586771825024-f82ef5fb6b76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+    alt="" />
+  <div
+    class="flex flex-col justify-center absolute inset-0 z-10 h-full w-full bg-black/20">
+    <div
+      class="sm:mx-auto w-full h-screen sm:h-auto sm:max-w-[600px] bg-gradient-to-br from-background-100 via-background-100/90 to-background-100/40 backdrop-blur-sm p-8 sm:p-16 flex-shrink-0 flex-grow-0 sm:rounded-xl">
+      <div class="mt-8 sm:mt-0">
+        <img
+          class="h-14 w-auto inline mx-auto"
+          src="assets/Logo.svg"
+          alt="Workflow" />
+        <h2 class="mt-6 inline text-3xl font-extrabold text-center text-gray-900">
+          Sign in to your account
+        </h2>
+      </div>
+
+      <div class="mt-8">
+        <div>
+          <div>
+            <p class="text-sm font-medium text-gray-700">Sign in with</p>
+
+            <div class="mt-1 grid grid-cols-2 gap-3">
+              <div>
+                <a
+                  href="#"
+                  class="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                  <span class="sr-only">Sign in with Facebook</span>
+                  <mat-icon svgIcon="facebook"></mat-icon>
+                </a>
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md text-sm font-medium text-gray-500 hover:bg-gray-50">
+                  <span class="sr-only">Sign in with Google</span>
+                  <mat-icon svgIcon="google" ></mat-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 relative">
+            <div
+              class="absolute inset-0 flex items-center"
+              aria-hidden="true">
+              <div class="w-full border-t"></div>
+            </div>
+            <div class="relative flex justify-center text-sm">
+              <span class="px-3 p-1 rounded-sm bg-background-200/10 backdrop-blur-md">
+                Or continue with
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6">
+          <form
+            action="#"
+            method="POST"
+            class="space-y-6">
+            <div>
+              <label
+                for="email"
+                class="block text-sm font-medium text-gray-700">
+                Email address
+              </label>
+              <div class="mt-1">
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+              </div>
+            </div>
+
+            <div class="space-y-1">
+              <label
+                for="password"
+                class="block text-sm font-medium text-gray-700">
+                Password
+              </label>
+              <div class="mt-1">
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  autocomplete="current-password"
+                  required
+                  class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <input
+                  id="remember-me"
+                  name="remember-me"
+                  type="checkbox"
+                  class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded" />
+                <label
+                  for="remember-me"
+                  class="ml-2 block text-sm text-gray-900">
+                  Remember me
+                </label>
+              </div>
+
+              <div class="text-sm">
+                <a
+                  href="#"
+                  class="font-medium text-indigo-600 hover:text-indigo-500">
+                  Forgot your password?
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <button
+                type="submit"
+                mat-flat-button
+                color="primary"
+                class="w-full py-2 font-medium rounded-md">
+                >
+                Sign in
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
