@@ -1,0 +1,140 @@
+/**
+* Generated theme by Material Theme Generator
+* https://materialtheme.arcsine.dev
+*/
+@use '@angular/material' as mat;
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+
+     
+$fontConfig: (
+  display-4: mat.define-typography-level(112px, 112px, 500, var(--font-family), -0.0134em),
+  display-3: mat.define-typography-level(56px, 56px, 500, var(--font-family), -0.0089em),
+  display-2: mat.define-typography-level(45px, 48px, 500, var(--font-family), 0.0000em),
+  display-1: mat.define-typography-level(34px, 40px, 500, var(--font-family), 0.0074em),
+  headline: mat.define-typography-level(24px, 32px, 400, var(--font-family), 0.0000em),
+  title: mat.define-typography-level(20px, 32px, 500, var(--font-family), 0.0075em),
+  subheading-2: mat.define-typography-level(16px, 28px, 400, var(--font-family), 0.0094em),
+  subheading-1: mat.define-typography-level(15px, 24px, 500, var(--font-family), 0.0067em),
+  body-2: mat.define-typography-level(14px, 24px, 500, var(--font-family), 0.0179em),
+  body-1: mat.define-typography-level(14px, 20px, 400, var(--font-family), 0.0179em),
+  button: mat.define-typography-level(14px, 14px, 500, var(--font-family), 0.0893em),
+  caption: mat.define-typography-level(12px, 20px, 400, var(--font-family), 0.0333em),
+  input: mat.define-typography-level(inherit, 1.125, 400, var(--font-family), 1.5px)
+);
+
+
+$theme-foreground: (
+  base:              #2c2c2c,
+  divider:           theme("colors.txt.divider"),
+  dividers:          theme("colors.txt.divider"),
+  disabled:          theme("colors.txt.disabled"),
+  disabled-button:   theme("colors.txt.disabled"),
+  disabled-text:     theme("colors.txt.disabled"),
+  elevation:         rgba(44, 44, 44, 0.863),
+  secondary-text:    theme("colors.txt.muted"),
+  hint-text:         theme("colors.txt.disabled"),
+  accent-text:       theme("colors.txt.light"),
+  icon:              theme("colors.txt.light"),
+  icons:             theme("colors.txt.light"),
+  text:              theme("colors.txt.muted"),
+  slider-min:        theme("colors.txt.muted"),
+  slider-off:        theme("colors.txt.divider"),
+  slider-off-active: theme("colors.txt.disabled"),
+);
+
+$theme-background: (
+  background:               theme("colors.background.100"),
+  status-bar:               theme("colors.background.400"),
+  app-bar:                  theme("colors.background.200"),
+  hover:                    theme("colors.background.700"),
+  card:                     theme("colors.background.50"),
+  dialog:                   theme("colors.background.50"),
+  tooltip:                  theme("colors.background.400"),
+  disabled-button:          theme("colors.background.800"),
+  raised-button:            theme("colors.background.50"),
+  focused-button:           theme("colors.txt.focused"),
+  selected-button:          theme("colors.background.400"),
+  selected-disabled-button: theme("colors.background.500"),
+  disabled-button-toggle:   theme("colors.background.300"),
+  unselected-chip:          theme("colors.background.300"),
+  disabled-list-option:     theme("colors.background.300"),
+);
+
+// Compute font config
+@include mat.core($fontConfig);
+  
+$mat-primary: (
+  main: theme("colors.primary.main"),
+  lighter: theme("colors.primary.light"),
+  darker: theme("colors.primary.dark"),
+  200: theme("colors.primary.main"), // For slide toggle,
+  contrast : (
+    main: theme("colors.txt.inverted"),
+    lighter: theme("colors.txt.main"),
+    darker: theme("colors.txt.inverted"),
+  )
+);
+$theme-primary: mat.define-palette($mat-primary, main, lighter, darker);
+
+
+$mat-accent: (
+  main: theme("colors.accent.main"),
+  lighter: theme("colors.accent.light"),
+  darker: theme("colors.accent.dark"),
+  200: theme("colors.accent.main"), // For slide toggle,
+  contrast : (
+    main: theme("colors.txt.inverted"),
+    lighter: theme("colors.txt.main"),
+    darker: theme("colors.txt.inverted"),
+  )
+);
+$theme-accent: mat.define-palette($mat-accent, main, lighter, darker);
+  
+$mat-warn: (
+  main: theme("colors.danger.main"),
+  lighter: theme("colors.danger.light"),
+  darker: theme("colors.danger.dark"),
+  200: theme("colors.danger.main"), // For slide toggle,
+  contrast : (
+    main: theme("colors.txt.inverted"),
+    lighter: theme("colors.txt.main"),
+    darker: theme("colors.txt.inverted"),
+  )
+);
+$theme-warn: mat.define-palette($mat-warn, main, lighter, darker);
+;
+
+$theme: (
+  primary: $theme-primary,
+  accent: $theme-accent,
+  warn: $theme-warn,
+  is-dark: false,
+  foreground: $theme-foreground,
+  background: $theme-background,
+);
+
+// Theme Init
+@include mat.all-component-themes($theme);
+
+// Handle buttons appropriately, with respect to line-height
+.mat-raised-button, .mat-stroked-button, .mat-flat-button {
+  padding: 0 1.15em;
+  margin: 0 .65em;
+  min-width: 3em;
+  line-height: 36.4px
+}
+
+.mat-standard-chip {
+  padding: .5em .85em;
+  min-height: 2.5em;
+}
+
+.material-icons {
+  font-size: 24px;
+  font-family: 'Material Icons', 'Material Icons';  
+  .mat-badge-content {
+    font-family: 'Manrope';
+  }
+}
