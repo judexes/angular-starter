@@ -1,0 +1,59 @@
+/*Change the rgb color here and it'll reflect in both tailwind and the UI Library*/
+:root {
+  --font-family-sans: 'Manrope', 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-family-serif: 'Gilda Display', Georgia, serif;
+  --font-family-mono: 'Fira Code', 'Ubuntu Mono', monospace;
+  --font-family: var(--font-family-sans); // Default font family !!Check the end of the file for how it is switched
+
+//Text colors
+  --main-txt: 0, 0, 0;
+  --inverted-txt: 255, 255, 255;
+
+  //Background
+  --bg-100:    243, 245, 246;
+  --bg-50:    255, 255, 255;
+  --bg-200:   237, 237, 237;
+  --bg-300:  224, 224, 224;
+  --bg-400:  173, 173, 173;
+  --bg-500:  148, 148, 148;
+  --bg-600:     94, 94, 94;
+  --bg-700:    44, 44, 44;
+
+  //Main App Colors
+  --primary-main: 24, 79, 168;
+  --primary-light: 167, 196, 246;
+  --primary-dark: 14, 54, 141;
+
+  --accent-main: 112, 59, 246;
+  --accent-light : 164, 128, 255;
+  --accent-dark: 112, 59, 246;
+
+  --danger-main: 225, 29, 72;
+  --danger-light: 246, 187, 200;
+  --danger-dark: 213, 17, 48;
+}
+
+.dark {
+  // All that's needed for dark mode
+  --main-txt: 255, 255, 255;
+
+  --bg-100:   43, 43, 43;
+  --bg-50:  26, 26, 26;
+  --bg-200:   56, 56, 56;
+  --bg-300:  69, 69, 69;
+  --bg-400:  94, 94, 94;
+  --bg-500:  120, 120, 120;
+  --bg-700:     250, 250, 250
+
+}
+.font-sans {
+  --font-family: var(--font-family-sans);
+}
+
+.font-mono {
+  --font-family: var(--font-family-mono);
+}
+
+.font-serif {
+  --font-family: var(--font-family-serif);
+}
